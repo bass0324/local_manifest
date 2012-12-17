@@ -39,6 +39,10 @@ cd packages/apps/Camera
 	aokp
 	push jb-mr1
 cd $root
+cd packages/apps/Mms
+	aokp
+	push jb-mr1
+cd $root
 cd packages/apps/ROMControl
 	aokp
 	push jb-mr1
