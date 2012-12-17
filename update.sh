@@ -35,14 +35,6 @@ cd frameworks/opt/telephony
 	cm
 	push cm-10.1
 cd $root
-cd hardware/libhardware
-	cm
-	push cm-10.1
-cd $root
-cd hardware/qcom/audio
-	cm
-	push cm-10.1
-cd $root
 cd hardware/qcom/display
 	cm
 	push cm-10.1
