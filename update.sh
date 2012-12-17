@@ -35,18 +35,6 @@ cd frameworks/opt/telephony
 	cm
 	push cm-10.1
 cd $root
-cd packages/apps/Camera
-	aokp
-	push jb-mr1
-cd $root
-cd packages/apps/Mms
-	aokp
-	push jb-mr1
-cd $root
-cd packages/apps/ROMControl
-	aokp
-	push jb-mr1
-cd $root
 cd hardware/libhardware
 	cm
 	push cm-10.1
@@ -61,6 +49,18 @@ cd hardware/qcom/display
 cd $root
 cd kernel/samsung/d2
 	cm
+	push jb-mr1
+cd $root
+cd packages/apps/Camera
+	aokp
+	push jb-mr1
+cd $root
+cd packages/apps/Mms
+	aokp
+	push jb-mr1
+cd $root
+cd packages/apps/ROMControl
+	aokp
 	push jb-mr1
 cd $root
 cd vendor/aokp
