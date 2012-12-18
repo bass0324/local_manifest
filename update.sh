@@ -55,6 +55,10 @@ cd packages/apps/ROMControl
 	aokp
 	push jb-mr1
 cd $root
+cd system/core
+	aokp
+	push jb-mr1
+cd $root
 cd vendor/aokp
 	aokp
 	push jb-mr1
