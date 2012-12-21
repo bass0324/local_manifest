@@ -33,6 +33,10 @@ cd vendor/samsung
     aokp
     push jb-mr1
 cd $root
+cd vendor/aokp
+    aokp
+    push jb-mr1
+cd $root
 
 echo "All synced up"
 exit
