@@ -2,7 +2,9 @@
 <manifest>
 
   <remote  name="gh"
-           fetch="https://github.com/BMc08GT" />      
+           fetch="https://github.com/BMc08GT" />
+  <remote  name="cm"
+           fetch="https://github.com/CyanogenMod" />
            
            
   <!-- Remove projects -->
@@ -13,6 +15,9 @@
   <remove-project name="AOKP/device_samsung_qcom-common" /> -->
   <remove-project name="AOKP/frameworks_av" />
   <remove-project name="AOKP/frameworks_native" />
+  <remove-project name="platform/hardware/qcom/audio" />
+  <remove-project name="platform/hardware/qcom/camera" />
+  <remove-project name="platform/hardware/qcom/power" />
   <remove-project name="AOKP/vendor_aokp" />
   <remove-project name="AOKP/vendor_samsung" />
   
@@ -26,6 +31,10 @@
   <project path="frameworks/native" name="frameworks_native" remote="gh" revision="jb-mr1" />
   <project path="vendor/aokp" name="vendor_aokp" remote="gh" revision="jb-mr1" />
   <project path="vendor/samsung" name="vendor_samsung" remote="gh" revision="jb-mr1" />
+  
+  <project path="hardware/qcom/audio" name="android_hardware_qcom_audio" remote="cm" revision="cm-10.1" />
+  <project path="hardware/qcom/camera" name="android_hardware_qcom_camera" remote="cm" revision="cm-10.1" />
+  <project path="hardware/qcom/power" name="android_hardware_qcom_power" remote="cm" revision="cm-10.1" />
 
   <!-- Kernel -->
   <project path="kernel/samsung/d2" name="kernel_samsung_d2" remote="gh" revision="jb-mr1" /> 
