@@ -3,8 +3,7 @@
 
   <remote  name="gh"
            fetch="https://github.com/BMc08GT" />
-  <remote  name="cm"
-           fetch="https://github.com/CyanogenMod" />
+
            
            
   <!-- Remove projects -->
