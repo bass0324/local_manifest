@@ -15,11 +15,20 @@ revision=$1
 git push gh $revision
 }
 
+## Devices will go here once merged
+
+cd frameworks/av
+    aokp
+    push jb-mr1
+cd $root
+cd frameworks/native
+    aokp
+    push jb-mr1
+cd $root
 cd kernel/samsung/d2
     cm
     push jb-mr1
 cd $root
 
-## Devices will go here once merged
 echo "All synced up"
 exit
