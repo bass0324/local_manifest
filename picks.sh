@@ -12,7 +12,6 @@ cd ~/
 #Pull in non-device cherries
 cd frameworks/base
 git fetch http://gerrit.sudoservers.com/AOKP/frameworks_base refs/changes/24/4724/3 && git cherry-pick FETCH_HEAD
-git fetch http://gerrit.sudoservers.com/AOKP/frameworks_base refs/changes/48/4748/1 && git cherry-pick FETCH_HEAD
 cd $root
 cd frameworks/opt/telephony
 git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_opt_telephony refs/changes/37/28237/1 && git cherry-pick FETCH_HEAD
