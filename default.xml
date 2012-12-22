@@ -10,7 +10,7 @@
   <remove-project name="AOKP/android_device_samsung_d2-common" />
   <remove-project name="AOKP/device_samsung_d2usc" />
   <remove-project name="AOKP/device_samsung_d2vzw" />
-  <remove-project name="AOKP/device_samsung_msm8960-common" />
+  <remove-project name="AOKP/android_device_samsung_msm8960-common" />
   <remove-project name="AOKP/device_samsung_qcom-common" />
   <remove-project name="AOKP/frameworks_av" />
   <remove-project name="AOKP/frameworks_native" />
