@@ -29,6 +29,10 @@ cd kernel/samsung/d2
     cm
     push jb-mr1
 cd $root
+cd system/core
+    aokp
+    push jb-mr1
+cd $root
 cd vendor/samsung
     aokp
     push jb-mr1
