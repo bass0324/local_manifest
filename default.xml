@@ -14,7 +14,7 @@
   <remove-project name="AOKP/device_samsung_qcom-common" />
   <remove-project name="AOKP/frameworks_av" />
   <remove-project name="AOKP/frameworks_native" />
-  <remove-project name="android_hardware_qcom_display" />
+  <remove-project name="UnicornButter/hardware_qcom_display" />
   <remove-project name="AOKP/vendor_aokp" />
   <remove-project name="AOKP/vendor_samsung" />
   
