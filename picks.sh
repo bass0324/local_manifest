@@ -7,7 +7,7 @@ root=`pwd`
 cd platform_manifest
 ./pick.sh
 
-cd ~/
+cd $root
 
 #Pull in non-device cherries
 cd frameworks/base
