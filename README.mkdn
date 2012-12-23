@@ -8,5 +8,6 @@ repo sync
 ./local_manifest/picks.sh
 
 # Brunch
+. build/envsetup.sh
 brunch <device>
 
