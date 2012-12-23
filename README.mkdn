@@ -1,5 +1,11 @@
 # To utilize this manifest run this before repo sync:
 curl -L -o .repo/local_manifest.xml -O -L https://raw.github.com/BMc08GT/local_manifest/master/default.xml
 
-#To use update script:
-curl -L -o update.sh -O -L https://raw.github.com/BMc08GT/local_manifest/master/update.sh
+# Then
+repo sync
+
+#To use pick script:
+--Runs PUB's script first and then runs picks listed
+./local_manifest/picks.sh
+
+
