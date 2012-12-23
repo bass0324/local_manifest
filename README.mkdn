@@ -4,8 +4,7 @@ curl -L -o .repo/local_manifest.xml -O -L https://raw.github.com/BMc08GT/local_m
 # Then
 repo sync
 
-#To use pick script:
---Runs PUB's script first and then runs picks listed
+#To use pick script(Runs PUB's script first and then runs picks listed):
 ./local_manifest/picks.sh
 
 
