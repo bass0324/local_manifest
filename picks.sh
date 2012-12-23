@@ -10,6 +10,9 @@ cd platform_manifest
 cd $root
 
 #Pull in non-device cherries
+cd frameworks/av
+git fetch http://gerrit.sudoservers.com/AOKP/frameworks_av refs/changes/84/4784/1 && git cherry-pick FETCH_HEAD
+cd $root
 cd frameworks/base
 git fetch http://gerrit.sudoservers.com/AOKP/frameworks_base refs/changes/24/4724/3 && git cherry-pick FETCH_HEAD
 cd $root
