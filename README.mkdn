@@ -9,5 +9,6 @@ repo sync
 
 # Brunch
 . build/envsetup.sh
+
 brunch <device>
 
