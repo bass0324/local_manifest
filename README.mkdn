@@ -1,10 +1,12 @@
 # To utilize this manifest run this before repo sync:
 curl -L -o .repo/local_manifest.xml -O -L https://raw.github.com/BMc08GT/local_manifest/master/default.xml
 
-# Then
+# Sync
 repo sync
 
 #To use pick script:
 ./local_manifest/picks.sh
 
+# Brunch
+brunch <device>
 
