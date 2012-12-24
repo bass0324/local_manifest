@@ -10,6 +10,10 @@ cm() {
 git pull cm cm-10.1
 }
 
+pub() {
+git pull pub jb-mr1
+}
+
 push() {
 revision=$1
 git push gh $revision
@@ -25,6 +29,15 @@ cd frameworks/native
     aokp
     push jb-mr1
 cd $root
+cd hardware/qcom/display-caf
+    cm
+    push cm-10.1
+cd $root
+cd hardware/qcom/media
+    pub
+    cm
+    push jb-mr1
+cd$root
 cd kernel/samsung/d2
     cm
     push jb-mr1
