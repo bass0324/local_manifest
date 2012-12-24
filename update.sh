@@ -37,7 +37,7 @@ cd hardware/qcom/media
     pub
     cm
     push jb-mr1
-cd$root
+cd $root
 cd kernel/samsung/d2
     cm
     push jb-mr1
