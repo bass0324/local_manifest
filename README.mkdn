@@ -7,7 +7,7 @@ curl -L -o .repo/local_manifest.xml -O -L https://raw.github.com/BMc08GT/local_m
 repo sync
 
 #To use pick script:
-./local_manifest/picks.sh
+./picks.sh
 
 # Brunch
 . build/envsetup.sh
