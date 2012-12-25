@@ -1,4 +1,4 @@
-if [ ! -e platform_manifest/picks.sh ]; then
+if [ ! -e platform_manifest/pick.sh ]; then
 curl -L -o .repo/local_manifest.xml -O -L https://raw.github.com/BMc08GT/local_manifest/master/default.xml
 else
 curl -L -o .repo/local_manifest.xml -O -L https://raw.github.com/BMc08GT/local_manifest/master/butter.xml
