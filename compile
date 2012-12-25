@@ -1,0 +1,65 @@
+#!/bin/bash
+
+# Simple script that allows three types of builds
+# make clean && brunch, make installclean && brunch,
+#            or runs ./sync && ./picks.sh && (make clean && brunch)
+
+#ARGS
+TYPE=$1
+DEVICE=$2
+
+help() {
+echo " "
+echo "	compile <command> <device>"
+echo "	commands are :"
+echo "	c for make clean && brunch <device>"
+echo "	i for make installclean && brunch <device>"
+echo "	s for ./sync && ./pick && c"
+echo " "
+}
+
+cleanbuild() {
+	lunchchoices
+	make clean
+}
+
+icleanbuild () {
+	lunchchoices
+	make installclean
+}
+
+syncpick() {
+	./sync
+	./picks.sh
+}
+
+brunchit () {
+	brunch $DEVICE
+}
+
+lunchchoices() {
+	lunch aokp_$DEVICE-userdebug
+}
+
+# Load environment
+. build/envsetup.sh
+
+# Check command
+if [ "$TYPE" = "help" ]; then
+	help
+	exit
+elif [ "$TYPE" = "c" ]; then
+	cleanbuild
+	brunchit
+elif [ "$TYPE" = "i" ]; then
+	icleanbuild
+	brunchit
+elif [ "$TYPE" = "s" ]; then
+	syncpick
+	brunchit
+else
+	echo " No build command given"
+	echo "    "
+	echo "  compile <command> <device> "
+	echo "  compile help for help with build commands"
+fi 
