@@ -11,5 +11,5 @@ curl -L -o .repo/local_manifest.xml -O -L https://raw.github.com/BMc08GT/local_m
 
 then
 
-  ./compile <command> <device>
+  ./compile "command" "device"
 
