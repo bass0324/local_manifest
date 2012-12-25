@@ -1,4 +1,6 @@
-# To utilize this manifest run this before repo sync:
+# To utilize this manifest for GCC/C++11 run this before repo sync:
+curl -L -o .repo/local_manifest.xml -O -L https://raw.github.com/BMc08GT/local_manifest/master/butter.xml
+# If using upstream AOKP manifest:
 curl -L -o .repo/local_manifest.xml -O -L https://raw.github.com/BMc08GT/local_manifest/master/default.xml
 
 # Sync
