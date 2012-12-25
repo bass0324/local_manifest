@@ -29,6 +29,10 @@ cd hardware/qcom/display-caf
     cm
     push cm-10.1
 cd $root
+cd hardware/qcom/audio-caf
+    cm
+    push jb-mr1
+cd $root
 cd kernel/samsung/d2
     cm
     push jb-mr1
