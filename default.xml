@@ -20,7 +20,7 @@
   <remove-project name="AOKP/vendor_samsung" />
   
   <!-- Local -->
-  <project path="build" name="build" remote="gh" revision="jb-mr1"
+  <project path="build" name="build" remote="gh" revision="jb-mr1">
       <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="device/samsung/d2-common" name="device_samsung_d2-common" remote="gh" revision="jb-mr1" />
