@@ -4,7 +4,7 @@ curl -L -o .repo/local_manifest.xml -O -L https://raw.github.com/BMc08GT/local_m
 curl -L -o .repo/local_manifest.xml -O -L https://raw.github.com/BMc08GT/local_manifest/master/default.xml
 
 # Sync
-repo sync
+./sync
 
 #To use pick script:
 ./picks.sh
