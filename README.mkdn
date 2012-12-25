@@ -6,11 +6,10 @@ curl -L -o .repo/local_manifest.xml -O -L https://raw.github.com/BMc08GT/local_m
 # Sync
 ./sync
 
-#To use pick script:
-./picks.sh
+# Build
+  './compile help' to view commands
 
-# Brunch
-. build/envsetup.sh
+then
 
-brunch "device"
+  ./compile <command> <device>
 
