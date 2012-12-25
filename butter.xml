@@ -7,11 +7,11 @@
            
            
   <!-- Remove projects -->
-  <!--<remove-project name="AOKP/android_device_samsung_d2-common" />
+  <remove-project name="AOKP/android_device_samsung_d2-common" />
   <remove-project name="AOKP/device_samsung_d2usc" />
   <remove-project name="AOKP/device_samsung_d2vzw" />
   <remove-project name="AOKP/android_device_samsung_msm8960-common" />
-  <remove-project name="AOKP/device_samsung_qcom-common" />-->
+  <remove-project name="AOKP/device_samsung_qcom-common" />
   <remove-project name="AOKP/frameworks_av" />
   <remove-project name="AOKP/frameworks_native" />
   <remove-project name="AOKP/android_system_core" />
@@ -38,4 +38,6 @@
   <!-- Kernel -->
   <project path="kernel/samsung/d2" name="kernel_samsung_d2" remote="gh" revision="jb-mr1" /> 
 
-</manifest> 
+</manifest>  
+
+  
