@@ -33,7 +33,7 @@
   <project path="frameworks/av" name="frameworks_av" remote="gh" revision="jb-mr1" />
   <project path="frameworks/native" name="frameworks_native" remote="gh" revision="jb-mr1" />
   <project path="hardware/qcom/display-caf" name="hardware_qcom_display-caf" remote="gh" revision="cm-10.1" />
-  <project path="hardware/qcom/audio-caf" name="hardware_qcom_audio-caf" remote="gh" revision="jb-mr1" />
+  <project path="hardware/qcom/audio-caf" name="hardware_qcom_audio-caf" remote="gh" revision="cm-10.1" />
   <project path="system/core" name="system_core" remote="gh" revision="jb-mr1" />
   <project path="vendor/aokp" name="vendor_aokp" remote="gh" revision="jb-mr1" />
   <project path="vendor/samsung" name="vendor_samsung" remote="gh" revision="jb-mr1" />
