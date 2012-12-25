@@ -4,8 +4,10 @@
 root=`pwd`
 
 #Pull in linaro changes on gerrit
-cd platform_manifest
-./pick.sh
+if [ -e platform_manifest/picks.sh ]; then
+  cd platform_manifest
+  ./pick.sh
+fi
 
 cd $root
 
