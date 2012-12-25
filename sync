@@ -8,6 +8,7 @@ repo sync -j$(cat /proc/cpuinfo | grep "^processor" | wc -l)
 
 if [ ! -e local_manifest/.symlinked ]; then
 	touch local_manifest/.symlinked
+	echo " Symlinking scripts: picks.sh, update.sh, and sync"
 	ln -s local_manifest/picks.sh picks.sh
 	ln -s local_manifest/update.sh update.sh
 	ln -s local_manifest/sync sync
