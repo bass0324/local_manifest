@@ -17,22 +17,6 @@ git push gh $revision
 
 ## Devices will go here once merged
 
-cd frameworks/av
-    aokp
-    push jb-mr1
-cd $root
-cd frameworks/native
-    aokp
-    push jb-mr1
-cd $root
-cd hardware/qcom/display-caf
-    cm
-    push cm-10.1
-cd $root
-cd hardware/qcom/audio-caf
-    cm
-    push jb-mr1
-cd $root
 cd kernel/samsung/d2
     cm
     push jb-mr1
@@ -41,11 +25,11 @@ cd system/core
     aokp
     push jb-mr1
 cd $root
-cd vendor/samsung
+cd vendor/aokp
     aokp
     push jb-mr1
 cd $root
-cd vendor/aokp
+cd vendor/samsung
     aokp
     push jb-mr1
 cd $root
