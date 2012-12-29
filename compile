@@ -34,7 +34,7 @@ syncpick() {
 }
 
 brunchit () {
-	brunch $DEVICE
+	 time brunch $DEVICE
 }
 
 lunchchoices() {
