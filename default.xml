@@ -27,6 +27,7 @@
   <project path="device/samsung/d2vzw" name="device_samsung_d2vzw" remote="gh" revision="jb-mr1" />
   <project path="device/samsung/msm8960-common" name="device_samsung_msm8960-common" remote="gh" revision="jb-mr1" />
   <project path="device/samsung/qcom-common" name="device_samsung_qcom-common" remote="gh" revision="jb-mr1" />
+  <project path="packages/apps/Camera" name="packages_apps_Camera" remote="gh" revision="jb-mr1" />
   <project path="packages/apps/Gallery2" name="android_packages_apps_Gallery2" remote="cm" revision="cm-10.1" />
   <project path="system/core" name="system_core" remote="gh" revision="jb-mr1" />
   <project path="vendor/aokp" name="vendor_aokp" remote="gh" revision="jb-mr1" />
