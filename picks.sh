@@ -21,6 +21,7 @@ git fetch http://gerrit.sudoservers.com/AOKP/frameworks_base refs/changes/24/472
 git fetch http://gerrit.sudoservers.com/AOKP/frameworks_base refs/changes/38/4838/1 && git cherry-pick FETCH_HEAD
 git fetch http://gerrit.sudoservers.com/AOKP/frameworks_base refs/changes/79/4779/20 && git cherry-pick FETCH_HEAD
 git fetch http://gerrit.sudoservers.com/AOKP/frameworks_base refs/changes/59/4759/2 && git cherry-pick FETCH_HEAD
+git fetch http://gerrit.sudoservers.com/AOKP/frameworks_base refs/changes/64/4864/1 && git cherry-pick FETCH_HEAD
 cd $root
 cd frameworks/opt/telephony
 git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_opt_telephony refs/changes/00/29100/1 && git cherry-pick FETCH_HEAD
@@ -30,4 +31,7 @@ git fetch http://gerrit.sudoservers.com/AOKP/packages_apps_ROMControl refs/chang
 git fetch http://gerrit.sudoservers.com/AOKP/packages_apps_ROMControl refs/changes/60/4760/3 && git cherry-pick FETCH_HEAD
 git fetch http://gerrit.sudoservers.com/AOKP/packages_apps_ROMControl refs/changes/75/4775/2 && git cherry-pick FETCH_HEAD
 git fetch http://gerrit.sudoservers.com/AOKP/packages_apps_ROMControl refs/changes/87/4787/1 && git cherry-pick FETCH_HEAD
+cd $root
+cd packages/apps/Settings
+git fetch http://gerrit.sudoservers.com/AOKP/packages_apps_Settings refs/changes/65/4865/1 && git cherry-pick FETCH_HEAD
 cd $root
