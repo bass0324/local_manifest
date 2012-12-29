@@ -22,6 +22,7 @@ git fetch http://gerrit.sudoservers.com/AOKP/frameworks_base refs/changes/38/483
 git fetch http://gerrit.sudoservers.com/AOKP/frameworks_base refs/changes/79/4779/20 && git cherry-pick FETCH_HEAD
 git fetch http://gerrit.sudoservers.com/AOKP/frameworks_base refs/changes/59/4759/2 && git cherry-pick FETCH_HEAD
 git fetch http://gerrit.sudoservers.com/AOKP/frameworks_base refs/changes/64/4864/4 && git cherry-pick FETCH_HEAD
+git fetch http://gerrit.sudoservers.com/AOKP/frameworks_base refs/changes/68/4868/1 && git cherry-pick FETCH_HEAD
 cd $root
 cd frameworks/opt/telephony
 git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_opt_telephony refs/changes/00/29100/1 && git cherry-pick FETCH_HEAD
