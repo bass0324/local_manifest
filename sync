@@ -6,4 +6,4 @@ fi
 
 repo sync -j$(cat /proc/cpuinfo | grep "^processor" | wc -l)
 
-./linker
+./local_manifest/linker
