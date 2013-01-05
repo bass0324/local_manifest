@@ -6,14 +6,14 @@ fi
 
 repo sync -j$(cat /proc/cpuinfo | grep "^processor" | wc -l)
 
-if [ ! -e local_manifest/.symlinked ]; then
-	touch local_manifest/.symlinked
+if [ ! -e .symlinked ]; then
+	touch .symlinked
 	echo " Symlinking scripts: picks.sh, update.sh, sync, and compile"
 	ln -s local_manifest/picks.sh picks.sh
 	ln -s local_manifest/update.sh update.sh
 	ln -s local_manifest/sync sync
 	ln -s local_manifest/compile compile
-	echo " making executable
+	echo " making executable"
 	chmod a+x picks.sh
 	chmod a+x update.sh
 	chmod a+x sync
