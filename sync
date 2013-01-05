@@ -4,6 +4,8 @@ else
 curl -L -o .repo/local_manifest.xml -O -L https://raw.github.com/BMc08GT/local_manifest/master/butter.xml
 fi
 
+./local_manifest/linker
+
 repo sync -j$(cat /proc/cpuinfo | grep "^processor" | wc -l)
 
-./local_manifest/linker
+
