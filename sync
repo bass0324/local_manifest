@@ -6,7 +6,7 @@ fi
 
 repo sync -j$(cat /proc/cpuinfo | grep "^processor" | wc -l)
 
-if [ ! -e .symlinked ]; then
+if [ ! -e ~/.symlinked ]; then
 	touch .symlinked
 	echo " Symlinking scripts: picks.sh, update.sh, sync, and compile"
 	ln -s local_manifest/picks.sh picks.sh
