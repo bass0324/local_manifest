@@ -34,7 +34,7 @@ cd $root
 
 cd packages/apps/Mms
 git fetch http://gerrit.sudoservers.com/AOKP/packages_apps_Mms refs/changes/93/4793/1 && git cherry-pick FETCH_HEAD
-git fetch http://gerrit.sudoservers.com/AOKP/packages_apps_Mms refs/changes/59/4659/3 && git cherry-pick FETCH_HEAD
+git fetch http://gerrit.sudoservers.com/AOKP/packages_apps_Mms refs/changes/59/4659/4 && git cherry-pick FETCH_HEAD
 cd $root
 
 cd packages/apps/ROMControl
