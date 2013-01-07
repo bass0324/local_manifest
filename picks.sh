@@ -25,7 +25,7 @@ git fetch http://gerrit.sudoservers.com/AOKP/frameworks_base refs/changes/53/495
 cd $root
 
 cd frameworks/opt/telephony
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_opt_telephony refs/changes/00/29100/1 && git cherry-pick FETCH_HEAD
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_opt_telephony refs/changes/00/29100/4 && git cherry-pick FETCH_HEAD
 cd $root
 
 cd hardware/qcom/audio-caf
