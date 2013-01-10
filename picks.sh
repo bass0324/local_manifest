@@ -40,7 +40,7 @@ cd packages/apps/Settings
 git fetch http://gerrit.sudoservers.com/AOKP/packages_apps_Settings refs/changes/65/4865/1 && git cherry-pick FETCH_HEAD
 cd $root
 
-cd packages/input/LatinIME
+cd packages/inputmethods/LatinIME
 git fetch http://gerrit.sudoservers.com/AOKP/packages_input_LatinIME refs/changes/92/4992/1 && git cherry-pick FETCH_HEAD
 git fetch http://gerrit.sudoservers.com/AOKP/packages_input_LatinIME refs/changes/93/4993/1 && git cherry-pick FETCH_HEAD
 cd $root
