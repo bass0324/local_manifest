@@ -13,6 +13,7 @@
   <remove-project name="AOKP/device_samsung_d2vzw" />
   <remove-project name="AOKP/android_device_samsung_msm8960-common" />
   <remove-project name="AOKP/device_samsung_qcom-common" />
+  <remove-project name="AOKP/frameworks_base" />
   <remove-project name="AOKP/packages_apps_Camera" />
   <remove-project name="AOKP/android_system_core" />
   <remove-project name="AOKP/vendor_aokp" />
@@ -27,6 +28,7 @@
   <project path="device/samsung/d2vzw" name="device_samsung_d2vzw" remote="gh" revision="jb-mr1" />
   <project path="device/samsung/msm8960-common" name="device_samsung_msm8960-common" remote="gh" revision="jb-mr1" />
   <project path="device/samsung/qcom-common" name="device_samsung_qcom-common" remote="gh" revision="jb-mr1" />
+  <project path="frameworks/base" name="frameworks_base" remote="gh" revision="jb-mr1" />
   <project path="packages/apps/Camera" name="packages_apps_Camera" remote="gh" revision="jb-mr1" />
   <project path="system/core" name="system_core" remote="gh" revision="jb-mr1" />
   <project path="vendor/aokp" name="vendor_aokp" remote="gh" revision="jb-mr1" />
