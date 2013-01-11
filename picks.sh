@@ -20,10 +20,6 @@ git fetch http://gerrit.sudoservers.com/AOKP/frameworks_base refs/changes/64/486
 git fetch http://gerrit.sudoservers.com/AOKP/frameworks_base refs/changes/53/4953/1 && git cherry-pick FETCH_HEAD
 cd $root
 
-cd frameworks/opt/telephony
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_opt_telephony refs/changes/00/29100/4 && git cherry-pick FETCH_HEAD
-cd $root
-
 cd packages/apps/Mms
 git fetch http://gerrit.sudoservers.com/AOKP/packages_apps_Mms refs/changes/59/4659/4 && git cherry-pick FETCH_HEAD
 cd $root
