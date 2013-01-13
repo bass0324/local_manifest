@@ -21,6 +21,10 @@ git fetch http://gerrit.sudoservers.com/AOKP/frameworks_base refs/changes/53/495
 git fetch http://gerrit.sudoservers.com/AOKP/frameworks_base refs/changes/54/5054/1 && git cherry-pick FETCH_HEAD
 cd $root
 
+cd hardware/qcom/audio-caf
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_hardware_qcom_audio-caf refs/changes/13/30213/1 && git cherry-pick FETCH_HEAD
+cd $root
+
 cd packages/apps/Mms
 git fetch http://gerrit.sudoservers.com/AOKP/packages_apps_Mms refs/changes/59/4659/7 && git cherry-pick FETCH_HEAD
 cd $root
