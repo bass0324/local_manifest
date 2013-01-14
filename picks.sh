@@ -20,6 +20,7 @@ git fetch http://gerrit.sudoservers.com/AOKP/frameworks_base refs/changes/64/486
 git fetch http://gerrit.sudoservers.com/AOKP/frameworks_base refs/changes/53/4953/1 && git cherry-pick FETCH_HEAD
 #git fetch http://gerrit.sudoservers.com/AOKP/frameworks_base refs/changes/54/5054/1 && git cherry-pick FETCH_HEAD
 git fetch http://gerrit.sudoservers.com/AOKP/frameworks_base refs/changes/79/5079/1 && git cherry-pick FETCH_HEAD
+git fetch http://gerrit.sudoservers.com/AOKP/frameworks_base refs/changes/24/4924/6 && git cherry-pick FETCH_HEAD
 cd $root
 
 cd hardware/qcom/audio-caf
@@ -37,6 +38,7 @@ cd $root
 cd packages/apps/ROMControl
 git fetch http://gerrit.sudoservers.com/AOKP/packages_apps_ROMControl refs/changes/54/4954/2 && git cherry-pick FETCH_HEAD
 git fetch http://gerrit.sudoservers.com/AOKP/packages_apps_ROMControl refs/changes/80/5080/1 && git cherry-pick FETCH_HEAD
+git fetch http://gerrit.sudoservers.com/AOKP/packages_apps_ROMControl refs/changes/23/4923/2 && git cherry-pick FETCH_HEAD
 cd $root
 
 cd packages/apps/Settings
