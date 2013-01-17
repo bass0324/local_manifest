@@ -15,9 +15,6 @@ fi
 #Pull in non-device cherries
 
 cd frameworks/base
-git fetch http://gerrit.sudoservers.com/AOKP/frameworks_base refs/changes/39/5039/3 && git cherry-pick FETCH_HEAD
-git fetch http://gerrit.sudoservers.com/AOKP/frameworks_base refs/changes/97/4997/1 && git cherry-pick FETCH_HEAD
-git fetch http://gerrit.sudoservers.com/AOKP/frameworks_base refs/changes/40/5040/4 && git cherry-pick FETCH_HEAD
 git fetch http://gerrit.sudoservers.com/AOKP/frameworks_base refs/changes/64/4864/4 && git cherry-pick FETCH_HEAD
 git fetch http://gerrit.sudoservers.com/AOKP/frameworks_base refs/changes/53/5133/1 && git cherry-pick FETCH_HEAD
 git fetch http://gerrit.sudoservers.com/AOKP/frameworks_base refs/changes/79/5079/5 && git cherry-pick FETCH_HEAD
