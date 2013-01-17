@@ -13,7 +13,7 @@
   <remove-project name="AOKP/device_samsung_d2vzw" />
   <remove-project name="AOKP/android_device_samsung_msm8960-common" />
   <remove-project name="AOKP/device_samsung_qcom-common" />
-  <remove-project name="android_hardware_qcom_audio-caf"
+  <remove-project name="android_hardware_qcom_audio-caf" />
   <remove-project name="AOKP/packages_apps_Camera" />
   <remove-project name="AOKP/android_system_core" />
   <remove-project name="AOKP/vendor_samsung" />
