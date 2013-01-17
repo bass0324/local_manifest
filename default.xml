@@ -7,7 +7,6 @@
            
            
   <!-- Remove projects -->
-  <remove-project name="AOKP/android_build" />
   <remove-project name="AOKP/android_device_samsung_d2-common" />
   <remove-project name="AOKP/device_samsung_d2usc" />
   <remove-project name="AOKP/device_samsung_d2vzw" />
@@ -16,12 +15,8 @@
   <remove-project name="android_hardware_qcom_audio-caf" />
   <remove-project name="AOKP/packages_apps_Camera" />
   <remove-project name="AOKP/android_system_core" />
-  <remove-project name="AOKP/vendor_samsung" />
   
   <!-- Local -->
-  <project path="build" name="build" remote="gh" revision="jb-mr1">
-      <copyfile src="core/root.mk" dest="Makefile" />
-  </project>
   <project path="device/samsung/d2-common" name="device_samsung_d2-common" remote="gh" revision="jb-mr1" />
   <project path="device/samsung/d2usc" name="device_samsung_d2usc" remote="gh" revision="jb-mr1" />
   <project path="device/samsung/d2vzw" name="device_samsung_d2vzw" remote="gh" revision="jb-mr1" />
