@@ -19,7 +19,7 @@ git fetch http://gerrit.sudoservers.com/AOKP/frameworks_base refs/changes/39/503
 git fetch http://gerrit.sudoservers.com/AOKP/frameworks_base refs/changes/97/4997/1 && git cherry-pick FETCH_HEAD
 git fetch http://gerrit.sudoservers.com/AOKP/frameworks_base refs/changes/40/5040/4 && git cherry-pick FETCH_HEAD
 git fetch http://gerrit.sudoservers.com/AOKP/frameworks_base refs/changes/64/4864/4 && git cherry-pick FETCH_HEAD
-git fetch http://gerrit.sudoservers.com/AOKP/frameworks_base refs/changes/53/4953/1 && git cherry-pick FETCH_HEAD
+git fetch http://gerrit.sudoservers.com/AOKP/frameworks_base refs/changes/53/5133/1 && git cherry-pick FETCH_HEAD
 git fetch http://gerrit.sudoservers.com/AOKP/frameworks_base refs/changes/79/5079/5 && git cherry-pick FETCH_HEAD
 git fetch http://gerrit.sudoservers.com/AOKP/frameworks_base refs/changes/06/5106/4 && git cherry-pick FETCH_HEAD
 git fetch http://gerrit.sudoservers.com/AOKP/frameworks_base refs/changes/30/5130/4 && git cherry-pick FETCH_HEAD
@@ -45,7 +45,7 @@ git fetch http://gerrit.sudoservers.com/AOKP/packages_apps_Phone refs/changes/47
 cd $root
 
 cd packages/apps/ROMControl
-git fetch http://gerrit.sudoservers.com/AOKP/packages_apps_ROMControl refs/changes/54/4954/2 && git cherry-pick FETCH_HEAD
+git fetch http://gerrit.sudoservers.com/AOKP/packages_apps_ROMControl refs/changes/54/4954/3 && git cherry-pick FETCH_HEAD
 git fetch http://gerrit.sudoservers.com/AOKP/packages_apps_ROMControl refs/changes/80/5080/2 && git cherry-pick FETCH_HEAD
 git fetch http://gerrit.sudoservers.com/AOKP/packages_apps_ROMControl refs/changes/07/5107/2 && git cherry-pick FETCH_HEAD
 cd $root
