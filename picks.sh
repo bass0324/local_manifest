@@ -54,6 +54,10 @@ cd packages/apps/Settings
 git fetch http://gerrit.sudoservers.com/AOKP/packages_apps_Settings refs/changes/65/4865/1 && git cherry-pick FETCH_HEAD
 cd $root
 
+cd packages/inputmethods/LatinIME
+git fetch http://gerrit.sudoservers.com/AOKP/packages_input_LatinIME refs/changes/32/5132/1 && git cherry-pick FETCH_HEAD
+cd $root
+
 cd vendor/aokp
 git fetch http://gerrit.sudoservers.com/AOKP/vendor_aokp refs/changes/18/5118/2 && git cherry-pick FETCH_HEAD
 git fetch http://gerrit.sudoservers.com/AOKP/vendor_aokp refs/changes/72/4972/3 && git cherry-pick FETCH_HEAD
