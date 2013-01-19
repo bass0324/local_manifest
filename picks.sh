@@ -15,10 +15,11 @@ fi
 #Pull in non-device cherries
 
 cd frameworks/base
-git fetch http://gerrit.sudoservers.com/AOKP/frameworks_base refs/changes/64/4864/4 && git cherry-pick FETCH_HEAD
+git fetch http://gerrit.sudoservers.com/AOKP/frameworks_base refs/changes/64/4864/5 && git cherry-pick FETCH_HEAD
 git fetch http://gerrit.sudoservers.com/AOKP/frameworks_base refs/changes/53/5133/1 && git cherry-pick FETCH_HEAD
 git fetch http://gerrit.sudoservers.com/AOKP/frameworks_base refs/changes/30/5130/4 && git cherry-pick FETCH_HEAD
 git fetch http://gerrit.sudoservers.com/AOKP/frameworks_base refs/changes/16/5116/1 && git cherry-pick FETCH_HEAD
+# Needs major ifdeffage for QCOM_HARDWARE
 git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_base refs/changes/49/29349/1 && git cherry-pick FETCH_HEAD
 cd $root
 
