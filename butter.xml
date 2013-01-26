@@ -12,11 +12,6 @@
   <remove-project name="AOKP/device_samsung_d2vzw" />
   <remove-project name="AOKP/android_device_samsung_msm8960-common" />
   <remove-project name="AOKP/device_samsung_qcom-common" />
-  <remove-project name="AOKP/frameworks_av" />
-  <remove-project name="AOKP/frameworks_native" />
-  <remove-project name="AOKP/android_system_core" />
-  <remove-project name="AOKP/vendor_aokp" />
-  <remove-project name="AOKP/vendor_samsung" />
   
   <!-- Local -->
   <project path="device/samsung/d2-common" name="device_samsung_d2-common" remote="gh" revision="jb-mr1" />
@@ -24,13 +19,6 @@
   <project path="device/samsung/d2vzw" name="device_samsung_d2vzw" remote="gh" revision="jb-mr1" />
   <project path="device/samsung/msm8960-common" name="device_samsung_msm8960-common" remote="gh" revision="jb-mr1" />
   <project path="device/samsung/qcom-common" name="device_samsung_qcom-common" remote="gh" revision="jb-mr1" />
-  <project path="frameworks/av" name="frameworks_av" remote="gh" revision="jb-mr1" />
-  <project path="frameworks/native" name="frameworks_native" remote="gh" revision="jb-mr1" />
-  <project path="hardware/qcom/display-caf" name="hardware_qcom_display-caf" remote="gh" revision="cm-10.1" />
-  <project path="hardware/qcom/audio-caf" name="hardware_qcom_audio-caf" remote="gh" revision="jb-mr1" />
-  <project path="system/core" name="system_core" remote="gh" revision="jb-mr1" />
-  <project path="vendor/aokp" name="vendor_aokp" remote="gh" revision="jb-mr1" />
-  <project path="vendor/samsung" name="vendor_samsung" remote="gh" revision="jb-mr1" />
 
   <!-- add this repo -->
   <project path="local_manifest" name="local_manifest" remote="gh" revision="master" />
