@@ -10,6 +10,7 @@ cd $root
 if [ -e platform_manifest/pick.sh ]; then
   cd platform_manifest
   ./pick.sh
+  cd $root
 fi
 
 #Pull in non-device cherries
