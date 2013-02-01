@@ -2,13 +2,11 @@
 <manifest>
 
   <remote  name="gh"
-           fetch="https://github.com/BMc08GT" />
-  
+           fetch="https://github.com/BMc08GT/" />
+           
   <remote  name="pub"
-           fetch="https://github.com/UnicornButter" />
-
-           
-           
+           fetch="https://github.com/" />         
+         
   <!-- Remove projects -->
   <remove-project name="AOKP/bionic" />
   <remove-project name="AOKP/android_device_samsung_d2-common" />
@@ -18,7 +16,7 @@
   <remove-project name="AOKP/device_samsung_qcom-common" />
   
   <!-- Local -->
-  <project path="bionic" name="android_bionic" remote="pub" revision="jb-mr1" />
+  <project path="bionic" name="UnicornButter/android_bionic" remote="pub" revision="jb-mr1" />
   <project path="device/samsung/d2-common" name="device_samsung_d2-common" remote="gh" revision="jb-mr1" />
   <project path="device/samsung/d2usc" name="device_samsung_d2usc" remote="gh" revision="jb-mr1" />
   <project path="device/samsung/d2vzw" name="device_samsung_d2vzw" remote="gh" revision="jb-mr1" />
