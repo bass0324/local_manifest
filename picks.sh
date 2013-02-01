@@ -33,6 +33,10 @@ cd packages/apps/Settings
 git fetch http://gerrit.sudoservers.com/AOKP/packages_apps_Settings refs/changes/65/4865/1 && git cherry-pick FETCH_HEAD
 cd $root
 
+cd vendor/aokp
+git fetch http://gerrit.sudoservers.com/AOKP/vendor_aokp refs/changes/12/5312/1 && git cherry-pick FETCH_HEAD
+cd $root
+
 cd vendor/samsung
 git fetch http://gerrit.sudoservers.com/AOKP/vendor_samsung refs/changes/10/5310/1 && git cherry-pick FETCH_HEAD
 cd $root
