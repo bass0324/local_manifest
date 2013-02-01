@@ -8,7 +8,7 @@
            fetch="https://github.com/" />         
          
   <!-- Remove projects -->
-  <remove-project name="AOKP/bionic" />
+  <remove-project name="AOKP/android_bionic" />
   <remove-project name="AOKP/android_device_samsung_d2-common" />
   <remove-project name="AOKP/device_samsung_d2usc" />
   <remove-project name="AOKP/device_samsung_d2vzw" />
