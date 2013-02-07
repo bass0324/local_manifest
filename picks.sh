@@ -20,25 +20,18 @@ git fetch http://gerrit.sudoservers.com/AOKP/frameworks_base refs/changes/64/486
 #git fetch http://gerrit.sudoservers.com/AOKP/frameworks_base refs/changes/33/5133/1 && git cherry-pick FETCH_HEAD
 git fetch http://gerrit.sudoservers.com/AOKP/frameworks_base refs/changes/92/5192/1 && git cherry-pick FETCH_HEAD
 git fetch http://gerrit.sudoservers.com/AOKP/frameworks_base refs/changes/93/5193/1 && git cherry-pick FETCH_HEAD
-git fetch http://gerrit.sudoservers.com/AOKP/frameworks_base refs/changes/17/5117/23 && git cherry-pick FETCH_HEAD
+git fetch http://gerrit.sudoservers.com/AOKP/frameworks_base refs/changes/17/5117/25 && git cherry-pick FETCH_HEAD
 git fetch http://gerrit.sudoservers.com/AOKP/frameworks_base refs/changes/47/5247/7 && git cherry-pick FETCH_HEAD
 cd $root
 
-cd packages/apps/Camera
-git fetch http://gerrit.sudoservers.com/AOKP/packages_apps_Camera refs/changes/23/5323/3 && git cherry-pick FETCH_HEAD
-cd $root
 
 cd packages/apps/ROMControl
 #git fetch http://gerrit.sudoservers.com/AOKP/packages_apps_ROMControl refs/changes/54/4954/3 && git cherry-pick FETCH_HEAD
-git fetch http://gerrit.sudoservers.com/AOKP/packages_apps_ROMControl refs/changes/20/5120/8 && git cherry-pick FETCH_HEAD
+git fetch http://gerrit.sudoservers.com/AOKP/packages_apps_ROMControl refs/changes/20/5120/9 && git cherry-pick FETCH_HEAD
 cd $root
 
 cd packages/apps/Settings
 git fetch http://gerrit.sudoservers.com/AOKP/packages_apps_Settings refs/changes/65/4865/1 && git cherry-pick FETCH_HEAD
-cd $root
-
-cd vendor/aokp
-git fetch http://gerrit.sudoservers.com/AOKP/vendor_aokp refs/changes/12/5312/1 && git cherry-pick FETCH_HEAD
 cd $root
 
 cd vendor/samsung
