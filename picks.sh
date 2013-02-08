@@ -33,8 +33,8 @@ cd $root
 cd packages/apps/ROMControl
 git fetch http://gerrit.sudoservers.com/AOKP/packages_apps_ROMControl refs/changes/20/5120/10 && git cherry-pick FETCH_HEAD
 # fetch http://gerrit.sudoservers.com/AOKP/packages_apps_ROMControl refs/changes/63/5163/4 && git cherry-pick FETCH_HEAD
-git fetch http://gerrit.sudoservers.com/AOKP/packages_apps_ROMControl refs/changes/80/5280/2 && git cherry-pick FETCH_HEAD
 git fetch http://gerrit.sudoservers.com/AOKP/packages_apps_ROMControl refs/changes/39/5339/4 && git cherry-pick FETCH_HEAD
+git fetch http://gerrit.sudoservers.com/AOKP/packages_apps_ROMControl refs/changes/80/5280/2 && git cherry-pick FETCH_HEAD
 cd $root
 
 cd packages/apps/Settings
