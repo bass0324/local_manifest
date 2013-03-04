@@ -14,16 +14,3 @@ if [ -e platform_manifest/pick.sh ]; then
 fi
 
 #Pull in non-device cherries
-
-cd frameworks/base
-git fetch http://gerrit.sudoservers.com/AOKP/frameworks_base refs/changes/64/4864/5 && git cherry-pick FETCH_HEAD
-git fetch http://gerrit.sudoservers.com/AOKP/frameworks_base refs/changes/47/5247/7 && git cherry-pick FETCH_HEAD
-cd $root
-
-cd hardware/qcom/audio-caf
-git fetch http://gerrit.sudoservers.com/AOKP/hardware_qcom_audio-caf refs/changes/99/5499/1 && git cherry-pick FETCH_HEAD
-cd $root
-
-cd packages/apps/Settings
-git fetch http://gerrit.sudoservers.com/AOKP/packages_apps_Settings refs/changes/65/4865/1 && git cherry-pick FETCH_HEAD
-cd $root
