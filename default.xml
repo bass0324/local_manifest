@@ -22,6 +22,6 @@
   <project path="local_manifest" name="local_manifest" remote="gh" revision="master" />
 
   <!-- Local Kernel tracking AOKP upstream-->
-  <project path="kernel/samsung/d2" name="kernel_samsung_d2" remote="gh" revision="upstream" /> 
+  <project path="kernel/samsung/d2" name="kernel_samsung_d2" remote="gh" revision="mr1-exp" /> 
 
 </manifest> 
