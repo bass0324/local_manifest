@@ -6,7 +6,6 @@
          
   <!-- Remove projects -->
   <remove-project name="AOKP/device_samsung_d2-common" />
-
   <remove-project name="AOKP/device_samsung_msm8960-common" />
   <remove-project name="AOKP/device_samsung_qcom-common" />
   
