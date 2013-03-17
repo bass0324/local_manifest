@@ -10,11 +10,13 @@
   <remove-project name="AOKP/device_samsung_d2-common" />
   <remove-project name="AOKP/device_samsung_msm8960-common" />
   <remove-project name="AOKP/device_samsung_qcom-common" />
+  <remove-project name="UnicornButter/hardware_qcom_display-caf" />
   
   <!-- Local -->
   <project path="device/samsung/d2-common" name="device_samsung_d2-common" remote="gh" revision="jb-mr1" />
   <project path="device/samsung/msm8960-common" name="device_samsung_msm8960-common" remote="gh" revision="jb-mr1" />
   <project path="device/samsung/qcom-common" name="device_samsung_qcom-common" remote="gh" revision="jb-mr1" />
+  <project path="hardware/qcom/display-caf" name="android_hardware_qcom_display-caf" remote="cm" revision="cm-10.1" />
 
   <!-- add this repo -->
   <project path="local_manifest" name="local_manifest" remote="gh" revision="master" />
