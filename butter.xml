@@ -21,7 +21,7 @@
 
   <!-- Kernel -->
   <project path="kernel/samsung/d2-3.0" name="AOKP/kernel_samsung_d2-3.0" remote="aokp" revision="jb-mr1" /> 
-
+  <project path="kernel/samsung/d2" name="UnicornButter/kernel_samsung_d2" remote="pub" revision="jb-mr1" /> 
 </manifest>  
 
   
