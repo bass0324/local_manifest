@@ -10,7 +10,7 @@
   <remove-project name="AOKP/device_samsung_d2-common" />
   <remove-project name="AOKP/device_samsung_msm8960-common" />
   <remove-project name="AOKP/device_samsung_qcom-common" />
-  
+  <remove-project name="AOKP/kernel_samsung_d2" />
   <!-- Local -->
   <project path="device/samsung/d2-common" name="device_samsung_d2-common" remote="gh" revision="jb-mr1" />
   <project path="device/samsung/msm8960-common" name="device_samsung_msm8960-common" remote="gh" revision="jb-mr1" />
