@@ -21,5 +21,9 @@ cd $root
 
 cd packages/apps/Mms
 git fetch http://gerrit.sudoservers.com/AOKP/packages_apps_Mms refs/changes/59/7259/2 && git cherry-pick FETCH_HEAD
+cd $root
 
-#Pull in non-device cherries
+cd vendor/samsung
+git fetch http://gerrit.sudoservers.com/AOKP/vendor_samsung refs/changes/31/7331/1 && git cherry-pick FETCH_HEAD
+git fetch http://gerrit.sudoservers.com/AOKP/vendor_samsung refs/changes/32/7332/1 && git cherry-pick FETCH_HEAD
+cd $root
