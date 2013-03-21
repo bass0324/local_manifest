@@ -24,6 +24,7 @@ git fetch http://gerrit.sudoservers.com/AOKP/packages_apps_Mms refs/changes/59/7
 cd $root
 
 cd vendor/samsung
-git fetch http://gerrit.sudoservers.com/AOKP/vendor_samsung refs/changes/31/7331/1 && git cherry-pick FETCH_HEAD
-git fetch http://gerrit.sudoservers.com/AOKP/vendor_samsung refs/changes/32/7332/1 && git cherry-pick FETCH_HEAD
+git fetch http://gerrit.sudoservers.com/AOKP/vendor_samsung refs/changes/31/7331/2 && git cherry-pick FETCH_HEAD
+git fetch http://gerrit.sudoservers.com/AOKP/vendor_samsung refs/changes/32/7332/2 && git cherry-pick FETCH_HEAD
+git fetch http://gerrit.sudoservers.com/AOKP/vendor_samsung refs/changes/58/7358/1 && git cherry-pick FETCH_HEAD
 cd $root
