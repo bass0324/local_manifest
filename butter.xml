@@ -17,6 +17,9 @@
   <project path="device/samsung/msm8960-common" name="device_samsung_msm8960-common" remote="gh" revision="jb-mr1" />
   <project path="device/samsung/qcom-common" name="device_samsung_qcom-common" remote="gh" revision="jb-mr1" />
 
+  <!-- 4.8 GCC Toolchain - Lets get crazy -->
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9" name="SaberMod/android_prebuilts_gcc_linux-x86_arm_sabermod-arm-eabi-4.9" remote="gh" revision="master" />
+  
   <!-- add this repo -->
   <project path="local_manifest" name="local_manifest" remote="gh" revision="master" />
 
