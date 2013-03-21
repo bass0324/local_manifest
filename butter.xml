@@ -21,7 +21,7 @@
   <project path="local_manifest" name="local_manifest" remote="gh" revision="master" />
 
   <!-- Kernel -->
-  <project path="kernel/samsung/d2" name="AOKP/kernel_samsung_d2" remote="aokp" revision="jb-mr1" />
+  <project path="kernel/samsung/d2" name="kernel_samsung_d2" remote="gh" revision="jb-mr1" />
    
 </manifest>  
 
