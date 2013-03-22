@@ -10,6 +10,8 @@ cd $root
 if [ -e platform_manifest/pick.sh ]; then
   cd platform_manifest
   ./pick.sh
+  cd system/core
+  git fetch ssh://BMc@gerrit.sudoservers.com:29418/AOKP/system_core refs/changes/61/7361/1 && git cherry-pick FETCH_HEAD
   cd $root
 fi
 
