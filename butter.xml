@@ -18,6 +18,7 @@
       <remove-project name="UnicornButter/android_build" />
       <remove-project name="kejar31/android_bionic" />
       <remove-project name="UnicornButter/external_skia" />
+      <remove-project name="platform/frameworks/compile/libbcc" />
       
       <!-- Local additions -->
       <project path="build" name="build" remote="gh" revision="jb-mr1" >
@@ -25,7 +26,7 @@
       </project>
       <project path="bionic" name="bionic" remote="gh" revision="jb-mr1" />
       <project path="external/skia" name="external_skia" remote="gh" revision="jb-mr1" />
-  
+      <project path="frameworks/compile/libbcc" name="frameworks_compile_libbcc" remote="gh" revision="jb-mr1" />
       <!-- 4.8 Changes - Lets get crazy -->
       <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="android_prebuilts_gcc_linux-x86_arm_sabermod-arm-eabi-4.8" remote="sm" revision="master" />
       <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="android_prebuilts_gcc_linux-x86_arm_sabermod-arm-linux-androideabi-4.8" remote="sm" revision="master" />
