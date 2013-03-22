@@ -13,12 +13,23 @@
   <remove-project name="AOKP/device_samsung_msm8960-common" />
   <remove-project name="AOKP/device_samsung_qcom-common" />
   
-  <!-- PUB project changes for 4.8 gcc testing -->
-  <remove-project name="UnicornButter/external_skia" />
-  <prject path="external/skia" name="external_skia" remote="gh" revision="jb-mr1" />
-  <!-- 4.8 Changes - Lets get crazy -->
-  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="android_prebuilts_gcc_linux-x86_arm_sabermod-arm-eabi-4.8" remote="sm" revision="master" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="android_prebuilts_gcc_linux-x86_arm_sabermod-arm-linux-androideabi-4.8" remote="sm" revision="master" />
+  <!-- 4.8 Project Unicorn Butter Changes Start -->
+      <!-- PUB removals -->
+      <remove-project name="UnicornButter/android_build" />
+      <remove-project name="UnicornButter/android_bionic" />
+      <remove-project name="UnicornButter/external_skia" />
+      
+      <!-- Local additions -->
+      <project path="build" name="build" remote="gh" revision="jb-mr1" >
+          <copyfile src="core/root.mk" dest="Makefile" />
+      </project>
+      <project path="bionic" name="bionic" remote="gh" revision="jb-mr1" />
+      <project path="external/skia" name="external_skia" remote="gh" revision="jb-mr1" />
+  
+      <!-- 4.8 Changes - Lets get crazy -->
+      <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="android_prebuilts_gcc_linux-x86_arm_sabermod-arm-eabi-4.8" remote="sm" revision="master" />
+      <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="android_prebuilts_gcc_linux-x86_arm_sabermod-arm-linux-androideabi-4.8" remote="sm" revision="master" />
+  <!-- 4.8 Project Unicorn Butter Changes End -->
   
 
   <!-- Local -->
