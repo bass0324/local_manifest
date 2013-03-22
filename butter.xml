@@ -17,6 +17,7 @@
       <!-- PUB removals -->
       <remove-project name="UnicornButter/android_build" />
       <remove-project name="kejar31/android_bionic" />
+      <remove-project name="UnicornButter/external_bluetooth_bluedroid" />
       <remove-project name="UnicornButter/external_skia" />
       <remove-project name="platform/frameworks/compile/libbcc" />
       
@@ -25,6 +26,7 @@
           <copyfile src="core/root.mk" dest="Makefile" />
       </project>
       <project path="bionic" name="bionic" remote="gh" revision="jb-mr1" />
+      <project path="external/bluetooth/bluedroid" name="external_bluetooth_bluedroid" remote="gh" revision="jb-mr1" />
       <project path="external/skia" name="external_skia" remote="gh" revision="jb-mr1" />
       <project path="frameworks/compile/libbcc" name="frameworks_compile_libbcc" remote="gh" revision="jb-mr1" />
       <!-- 4.8 Changes - Lets get crazy -->
