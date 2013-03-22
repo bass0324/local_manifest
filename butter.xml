@@ -16,7 +16,7 @@
   <!-- 4.8 Project Unicorn Butter Changes Start -->
       <!-- PUB removals -->
       <remove-project name="UnicornButter/android_build" />
-      <remove-project name="UnicornButter/android_bionic" />
+      <remove-project name="kejar31/android_bionic" />
       <remove-project name="UnicornButter/external_skia" />
       
       <!-- Local additions -->
