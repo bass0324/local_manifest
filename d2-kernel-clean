@@ -34,3 +34,6 @@ cp $KERNELSRC/arch/arm/boot/zImage -f $DIRSRC/out/target/product/d2vzw/kernel;
 export KERNEL_LOC=$DIRSRC/out/target/product/d2vzw/kernel;
 echo "Kernel build finished. Located at $KERNEL_LOC";
 echo "";
+echo " Making kernel directory proper now.";
+cd $KERNELSRC && make mrproper && cd $DIRSRC;
+echo "";
