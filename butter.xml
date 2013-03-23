@@ -3,8 +3,6 @@
 
   <remote  name="gh"
            fetch="https://github.com/BMc08GT" />
-  <remote  name="sm"
-           fetch="https://github.com/SaberMod" />
 
            
            
@@ -12,29 +10,6 @@
   <remove-project name="AOKP/device_samsung_d2-common" />
   <remove-project name="AOKP/device_samsung_msm8960-common" />
   <remove-project name="AOKP/device_samsung_qcom-common" />
-  
-  <!-- 4.8 Project Unicorn Butter Changes Start -->
-      <!-- PUB removals -->
-      <remove-project name="UnicornButter/android_build" />
-      <remove-project name="kejar31/android_bionic" />
-      <remove-project name="UnicornButter/external_bluetooth_bluedroid" />
-      <remove-project name="UnicornButter/external_oprofile" />
-      <remove-project name="UnicornButter/external_skia" />
-      <remove-project name="platform/frameworks/compile/libbcc" />
-      
-      <!-- Local additions -->
-      <project path="build" name="build" remote="gh" revision="jb-mr1" >
-          <copyfile src="core/root.mk" dest="Makefile" />
-      </project>
-      <project path="bionic" name="bionic" remote="gh" revision="jb-mr1" />
-      <project path="external/bluetooth/bluedroid" name="external_bluetooth_bluedroid" remote="gh" revision="jb-mr1" />
-      <project path="external/oprofile" name="external_oprofile" remote="gh" revision="jb-mr1" />
-      <project path="external/skia" name="external_skia" remote="gh" revision="jb-mr1" />
-      <project path="frameworks/compile/libbcc" name="frameworks_compile_libbcc" remote="gh" revision="jb-mr1" />
-      <!-- 4.8 Changes - Lets get crazy -->
-      <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="android_prebuilts_gcc_linux-x86_arm_sabermod-arm-eabi-4.8" remote="sm" revision="master" />
-      <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="android_prebuilts_gcc_linux-x86_arm_sabermod-arm-linux-androideabi-4.8" remote="sm" revision="master" />
-  <!-- 4.8 Project Unicorn Butter Changes End -->
   
 
   <!-- Local -->
