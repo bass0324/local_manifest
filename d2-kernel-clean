@@ -1,0 +1,36 @@
+#!/bin/bash -x
+# Copyright (C) 2012-2013 The SaberMod Project
+# Copyright (C) 2013 BMc08GT
+# Build Script.  Use bash to run this script, bash mako-kernel from source directory
+export MANUFACTURER=samsung;
+export DEVICE=d2;
+
+# Source Directory PATH
+export DIRSRC="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )";
+
+# Kernel Source PATH
+export KERNELSRC=$DIRSRC/kernel/$MANUFACTURER/$DEVICE;
+
+# Target gcc version
+export TARGET_GCC=4.7;
+export ARM_EABI_TOOLCHAIN=$DIRSRC/prebuilts/gcc/linux-x86/arm/arm-eabi-$TARGET_GCC;
+export PATH=$PATH:$ARM_EABI_TOOLCHAIN/bin:$ARM_EABI_TOOLCHAIN/arm-eabi/bin;
+
+# Cross compile with arm
+export ARCH=arm;
+export CCOMPILE=$CROSS_COMPILE;
+export CROSS_COMPILE=$ARM_EABI_TOOLCHAIN/bin/arm-eabi-;
+
+echo "Cleaning target kernel source";
+cd $KERNELSRC && make -C $KERNELSRC -j `cat /proc/cpuinfo | grep "^processor" | wc -l` "$@" clean;
+
+# Start the build
+echo "";
+echo "Starting the kernel build";
+echo "";
+make -C $KERNELSRC -j `cat /proc/cpuinfo | grep "^processor" | wc -l` "$@" aokp_d2vzw_defconfig && time make -C $KERNELSRC -j `cat /proc/cpuinfo | grep "^processor" | wc -l` "$@" zImage && make -C $KERNELSRC -j `cat /proc/cpuinfo | grep "^processor" | wc -l` "$@" modules;
+mkdir -p $DIRSRC/out && mkdir -p $DIRSRC/out/target && mkdir -p $DIRSRC//out/target/product && mkdir -p $DIRSRC/out/target/product/d2vzw;
+cp $KERNELSRC/arch/arm/boot/zImage -f $DIRSRC/out/target/product/d2vzw/kernel;
+export KERNEL_LOC=$DIRSRC/out/target/product/d2vzw/kernel;
+echo "Kernel build finished. Located at $KERNEL_LOC";
+echo "";
