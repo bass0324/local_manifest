@@ -29,7 +29,7 @@ echo "";
 echo "Starting the kernel build";
 echo "";
 make -C $KERNELSRC -j `cat /proc/cpuinfo | grep "^processor" | wc -l` "$@" aokp_d2vzw_defconfig && time make -C $KERNELSRC -j `cat /proc/cpuinfo | grep "^processor" | wc -l` "$@" zImage && make -C $KERNELSRC -j `cat /proc/cpuinfo | grep "^processor" | wc -l` "$@" modules;
-mkdir -p $DIRSRC/out && mkdir -p $DIRSRC/out/target && mkdir -p $DIRSRC//out/target/product && mkdir -p $DIRSRC/out/target/product/d2vzw;
+mkdir -p $DIRSRC/out && mkdir -p $DIRSRC/out/target && mkdir -p $DIRSRC/out/target/product && mkdir -p $DIRSRC/out/target/product/d2vzw;
 cp $KERNELSRC/arch/arm/boot/zImage -f $DIRSRC/out/target/product/d2vzw/kernel;
 export KERNEL_LOC=$DIRSRC/out/target/product/d2vzw/kernel;
 echo "Kernel build finished. Located at $KERNEL_LOC";
