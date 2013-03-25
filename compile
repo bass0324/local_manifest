@@ -15,7 +15,18 @@ echo "	commands are :"
 echo "	c for make clean && brunch <device>"
 echo "	i for make installclean && brunch <device>"
 echo "	s for ./sync && ./pick && c"
+echo "  u for checkout upstream in device repos && c"
 echo " "
+}
+
+upstream(){
+	cd device/samsung/d2-common && checkout_upstream && cd $root
+	cd device/samsung/msm8960-common && checkout_upstream && cd $root
+	cd device/samsung/qcom-common && checkout_upstream && cd $root
+}
+
+checkout_upstream() {
+        git fetch upstream && git checkout upstream/jb-mr1
 }
 
 cleanbuild() {
@@ -41,8 +52,15 @@ lunchchoices() {
 	lunch aokp_$DEVICE-userdebug
 }
 
+root=`pwd`
+
 # Load environment
-. build/envsetup.sh
+if [ ! -d platform_manifest ]; then
+	echo "Not in root of source tree!!"
+	exit
+else
+	. build/envsetup.sh
+fi
 
 # Check command
 if [ "$TYPE" = "help" ]; then
@@ -56,6 +74,11 @@ elif [ "$TYPE" = "i" ]; then
 	brunchit
 elif [ "$TYPE" = "s" ]; then
 	syncpick
+	cleanbuild
+	brunchit
+elif [ "$TYPE" = "u" ]; then
+	sync
+	upstream
 	cleanbuild
 	brunchit
 else
