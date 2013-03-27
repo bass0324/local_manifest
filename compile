@@ -26,6 +26,9 @@ upstream(){
 }
 
 checkout_upstream() {
+	CURRENT_REPO=`pwd`
+	CURRENT_REPO=${CURRENT_REPO##*/}
+	echo " Checking out $CURRENT_REPO to AOKP upstream"
         git fetch upstream && git checkout upstream/jb-mr1
 }
 
