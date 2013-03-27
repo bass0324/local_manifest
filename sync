@@ -1,9 +1,17 @@
-
+# Check repo directory for new local_manifests
+if [ ! -d .repo/local_manifests ]; then
+	mkdir .repo/local_manifests
+        BMC=`grep -rH 'BMc08GT' .repo/local_manifest.xml `
+        if [ "BMC" != "" ]; then
+		#  Using my local_manf so remove old deprecated one
+		rm .repo/local_manifest.xml
+	fi
+fi
 
 if [ ! -e platform_manifest/pick.sh ]; then
-curl -L -o .repo/local_manifest.xml -O -L https://raw.github.com/BMc08GT/local_manifest/master/default.xml
+	curl -L -o .repo/local_manifests/local_manifest.xml -O -L https://raw.github.com/BMc08GT/local_manifest/master/default.xml
 else
-curl -L -o .repo/local_manifest.xml -O -L https://raw.github.com/BMc08GT/local_manifest/master/butter.xml
+	curl -L -o .repo/local_manifests/local_manifest.xml -O -L https://raw.github.com/BMc08GT/local_manifest/master/butter.xml
 fi
 
 
