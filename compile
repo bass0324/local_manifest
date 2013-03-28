@@ -7,6 +7,7 @@
 #ARGS
 TYPE=$1
 DEVICE=$2
+UPLOAD=$3
 
 help() {
 echo " "
@@ -62,7 +63,7 @@ if [ ! -d platform_manifest ]; then
 	echo "Not in root of source tree!!"
 	exit
 else
-	. build/envsetup.sh
+	. build/envsetup.sh >/dev/null 2>&1
 fi
 
 # Check command
@@ -90,3 +91,12 @@ else
 	echo "  compile <command> <device> "
 	echo "  compile help for help with build commands"
 fi 
+
+if [ "$UPLOAD" = "-y" ]; then
+	# Just move zip out of build dir for now
+	ZIP=` find out/target/product/$DEVICE -name *aokp_\*unofficial*.zip `
+	if [ ! -d ~/zips/$DEVICE ]; then
+		mkdir ~/zips/$DEVICE
+	fi
+	cp $ZIP ~/zips/$DEVICE
+fi
