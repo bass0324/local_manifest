@@ -12,7 +12,7 @@ if [ -e platform_manifest/pick.sh ]; then
   ./pick.sh
   cd $root
   cd system/core
-  git fetch ssh://BMc@gerrit.sudoservers.com:29418/AOKP/system_core refs/changes/61/7361/1 && git cherry-pick FETCH_HEAD
+  git fetch ssh://BMC@gerrit.sudoservers.com:29418/AOKP/system_core refs/changes/61/7361/1 && git cherry-pick FETCH_HEAD
   cd $root
 fi
 
