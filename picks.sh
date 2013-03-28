@@ -19,4 +19,14 @@ fi
 cd frameworks/base
 git fetch http://gerrit.sudoservers.com/AOKP/frameworks_base refs/changes/45/7245/5 && git cherry-pick FETCH_HEAD
 git fetch http://gerrit.sudoservers.com/AOKP/frameworks_base refs/changes/07/7207/6 && git cherry-pick FETCH_HEAD
+git fetch http://gerrit.sudoservers.com/AOKP/frameworks_base refs/changes/07/7346/3 && git cherry-pick FETCH_HEAD
+cd $root
+
+cd external/webkit
+git fetch http://gerrit.sudoservers.com/AOKP/external_webkit refs/changes/80/7480/1 && git cherry-pick FETCH_HEAD
+git fetch http://gerrit.sudoservers.com/AOKP/external_webkit refs/changes/81/7481/1 && git cherry-pick FETCH_HEAD
+cd $root
+
+cd packages/apps/ROMControl
+git fetch ssh://BMc@gerrit.sudoservers.com:29418/AOKP/packages_apps_ROMControl refs/changes/35/7435/3 && git cherry-pick FETCH_HEAD
 cd $root
