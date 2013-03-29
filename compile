@@ -94,9 +94,22 @@ fi
 
 if [ "$UPLOAD" = "-y" ]; then
 	# Just move zip out of build dir for now
-	ZIP=` find out/target/product/$DEVICE -name *aokp_\*unofficial*.zip `
+	ZIP_PATH=` find out/target/product/$DEVICE -name *aokp_\*unofficial*.zip `
+	ZIP=${ZIP_PATH##*/}
 	if [ ! -d ~/zips/$DEVICE ]; then
 		mkdir ~/zips/$DEVICE
 	fi
-	cp $ZIP ~/zips/$DEVICE
+        if [ "$ZIP_PATH" != "" ]; then
+		cp $ZIP_PATH ~/zips/$DEVICE
+		# Check zip made it there with correct file name
+		CP_CHECK=` find ~/zips/$DEVICE -name $ZIP `
+		if [ "$CP_CHECK" = "$ZIP" ]; then
+			echo "Build is located at ~/zips/$DEVICE/$ZIP."
+		else
+			echo "Build was not cp'd correctly...."
+		fi
+	else
+		echo "No zip found in out/target/product/$DEVICE."
+		echo "Build bork!?!?"
+	fi
 fi
