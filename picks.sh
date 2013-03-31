@@ -16,6 +16,17 @@ if [ -e platform_manifest/pick.sh ]; then
   cd $root
 fi
 
+#defconfig merger
+cd device/samsung/d2att
+git fetch http://gerrit.sudoservers.com/AOKP/device_samsung_d2att refs/changes/84/7584/1 && git cherry-pick FETCH_HEAD
+cd ../d2tmo
+git fetch http://gerrit.sudoservers.com/AOKP/device_samsung_d2tmo refs/changes/85/7585/1 && git cherry-pick FETCH_HEAD
+cd ../d2usc
+git fetch http://gerrit.sudoservers.com/AOKP/device_samsung_d2usc refs/changes/83/7583/1 && git cherry-pick FETCH_HEAD
+cd ../d2vzw
+git fetch http://gerrit.sudoservers.com/AOKP/device_samsung_d2vzw refs/changes/82/7582/1 && git cherry-pick FETCH_HEAD
+cd $root
+
 cd frameworks/base
 #git fetch http://gerrit.sudoservers.com/AOKP/frameworks_base refs/changes/45/7245/7 && git cherry-pick FETCH_HEAD
 #git fetch http://gerrit.sudoservers.com/AOKP/frameworks_base refs/changes/07/7207/8 && git cherry-pick FETCH_HEAD
