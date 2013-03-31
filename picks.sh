@@ -30,8 +30,8 @@ cd $root
 cd frameworks/base
 git fetch ssh://BMc@gerrit.sudoservers.com:29418/AOKP/frameworks_base refs/changes/36/7436/4 && git cherry-pick FETCH_HEAD
 git fetch http://gerrit.sudoservers.com/AOKP/frameworks_base refs/changes/48/7548/1 && git cherry-pick FETCH_HEAD
-git fetch http://gerrit.sudoservers.com/AOKP/frameworks_base refs/changes/45/7245/8 && git cherry-pick FETCH_HEAD
-git fetch http://gerrit.sudoservers.com/AOKP/frameworks_base refs/changes/07/7207/9 && git cherry-pick FETCH_HEAD
+git fetch http://gerrit.sudoservers.com/AOKP/frameworks_base refs/changes/45/7245/10 && git cherry-pick FETCH_HEAD
+git fetch http://gerrit.sudoservers.com/AOKP/frameworks_base refs/changes/07/7207/10 && git cherry-pick FETCH_HEAD
 cd $root
 
 cd external/webkit
