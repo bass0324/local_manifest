@@ -18,10 +18,10 @@ fi
 
 cd frameworks/base
 git fetch ssh://BMc@gerrit.sudoservers.com:29418/AOKP/frameworks_base refs/changes/36/7436/4 && git cherry-pick FETCH_HEAD
-git fetch http://gerrit.sudoservers.com/AOKP/frameworks_base refs/changes/33/5133/1 && git cherry-pick FETCH_HEAD
+#git fetch http://gerrit.sudoservers.com/AOKP/frameworks_base refs/changes/33/5133/1 && git cherry-pick FETCH_HEAD
 cd $root
 
 cd packages/apps/ROMControl
 git fetch ssh://BMc@gerrit.sudoservers.com:29418/AOKP/packages_apps_ROMControl refs/changes/35/7435/5 && git cherry-pick FETCH_HEAD
-git fetch http://gerrit.sudoservers.com/AOKP/packages_apps_ROMControl refs/changes/54/4954/3 && git cherry-pick FETCH_HEAD
+#git fetch http://gerrit.sudoservers.com/AOKP/packages_apps_ROMControl refs/changes/54/4954/3 && git cherry-pick FETCH_HEAD
 cd $root
