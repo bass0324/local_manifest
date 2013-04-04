@@ -26,7 +26,6 @@ cd $root
 cd frameworks/base
 #pstest 7436/4
 pstest 7719/1
-pstest
 cd $root
 
 cd packages/apps/ROMControl
