@@ -5,6 +5,9 @@
 root=`pwd`
 cd $root
 
+# In order to use pstest must be in build environment
+. build/envsetup.sh >/dev/null 2>&1
+
 # Pull in linaro changes on gerrit
 # if using the pub manifest
 if [ -e platform_manifest/pick.sh ]; then
