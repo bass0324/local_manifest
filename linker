@@ -2,16 +2,14 @@ if [ ! -e .symlinked ]; then
 touch .symlinked
 echo " Symlinking scripts: picks.sh, update.sh, sync, and compile"
 ln -s local_manifest/picks.sh picks.sh
-ln -s local_manifest/update.sh update.sh
 ln -s local_manifest/sync sync
 ln -s local_manifest/compile compile
-ln -s local_manifest/d2-kernel-clean d2-kernel-clean
+ln -s local_manifest/build-clean-kernel build-clean-kernel
 echo " making executable"
 chmod a+x picks.sh
-chmod a+x update.sh
 chmod a+x sync
 chmod a+x compile
-chmod a+x d2-kernel-clean
+chmod a+x build-clean-kernel
 else
 echo " Scripts already setup."
 fi
