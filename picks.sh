@@ -14,7 +14,7 @@ cd $root
 cd frameworks/base
 pstest 7754/1
 pstest 7436/25
-pstest 7820/10
+pstest 7820/11
 pstest 7889/4
 cd $root
 
