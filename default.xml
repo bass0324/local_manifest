@@ -7,7 +7,8 @@
   <!-- add this repo -->
   <project path="local_manifest" name="local_manifest" remote="gh" revision="master" />
 
-  <!-- Local Kernel tracking AOKP upstream-->
-  <project path="kernel/samsung/d2" name="AOKP/kernel_samsung_d2" remote="aokp" revision="jb-mr1" /> 
+  <!-- Kernel(s) tracking AOKP upstream-->
+  <project path="kernel/samsung/d2" name="AOKP/kernel_samsung_d2" remote="aokp" revision="jb-mr1" />
+  <project path="kernel/lge/mako" name="faux123/mako" remote="aokp" revision="enhanced_stock" />
 
 </manifest> 
