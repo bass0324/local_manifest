@@ -21,3 +21,6 @@ cd $root
 cd packages/apps/ROMControl
 pstest 7435/22
 cd $root
+
+# Reinitialize build environment with pspush
+. build/envsetup.sh >/dev/null 2>&1
