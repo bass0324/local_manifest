@@ -12,14 +12,14 @@ pstest 7717/1
 cd $root
 
 cd frameworks/base
-pstest 7754/1
-pstest 7436/25
+pstest 7436/28
 pstest 7820/11
-pstest 7889/4
+pstest 7889/8
+pstest 7929/1
 cd $root
 
 cd packages/apps/ROMControl
-pstest 7435/22
+pstest 7435/23
 cd $root
 
 # Reinitialize build environment with pspush
