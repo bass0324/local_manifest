@@ -13,9 +13,8 @@ cd $root
 
 cd frameworks/base
 pstest 7436/28
-pstest 7820/11
 pstest 7889/9
-pstest 7929/1
+pstest 7929/3
 cd $root
 
 cd packages/apps/ROMControl
