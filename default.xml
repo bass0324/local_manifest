@@ -5,7 +5,7 @@
            fetch="https://github.com/BMc08GT/" />
            
   <remove-project name="AOKP/device_samsung_d2-common" />
-  <remove-project name="AOKP/device_samsung_dvzw" />
+  <remove-project name="AOKP/device_samsung_d2vzw" />
   <remove-project name="AOKP/device_samsung_qcom-common" />
   
   <project path="device/samsung/d2-common" name="device_samsung_d2-common" remote="gh" revision="jb-mr1" />
