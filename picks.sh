@@ -12,13 +12,7 @@ pstest 7717/1
 cd $root
 
 cd frameworks/base
-pstest 7969/2
-cd $root
-
-cd vendor/samsung
-pstest 7991/1
-pstest 7992/1
-pstest 7993/1
+pstest 7969/3
 cd $root
 
 # Reinitialize build environment with pspush
