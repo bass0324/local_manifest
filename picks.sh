@@ -13,6 +13,7 @@ cd $root
 
 cd frameworks/base
 pstest 7969/3
+pstest 8014/2
 cd $root
 
 # Reinitialize build environment with pspush
