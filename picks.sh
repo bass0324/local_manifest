@@ -27,6 +27,10 @@ pstest 8049/5
 pstest 8050/4
 cd $root
 
+cd packages/apps/ROMControl
+pstest 8033/1
+cd $root
+
 cd packages/apps/Settings
 pstest 8035/2
 cd $root
