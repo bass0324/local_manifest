@@ -14,8 +14,6 @@ cd $root
 cd frameworks/base
 pstest 7982/1
 pstest 8032/1
-pstest 8029/2
-pstest 8034/1
 pstest 7969/6
 pstest 8014/4
 pstest 8041/3
@@ -31,8 +29,8 @@ cd packages/apps/ROMControl
 pstest 8033/1
 cd $root
 
-cd packages/apps/Settings
-pstest 8035/2
+cd vendor/aokp
+pstest 8083/2
 cd $root
 
 # Reinitialize build environment with pspush
