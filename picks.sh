@@ -54,7 +54,7 @@ pstest 8190/1
 cd $root
 
 cd vendor/aokp
-pstest 8191/1
+pstest 8191/2
 cd $root
 
 # Reinitialize build environment with pspush
