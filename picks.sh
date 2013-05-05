@@ -8,11 +8,7 @@ cd $root
 . build/envsetup.sh >/dev/null 2>&1
 
 cd build
-pstest 7717/1
-cd $root
-
-cd dalvik
-pstest 8131/1
+pstest 7717/2
 cd $root
 
 cd frameworks/base
