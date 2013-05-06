@@ -12,25 +12,6 @@ pstest 7717/2
 pstest 8192/1
 cd $root
 
-cd device/samsung/d2-common
-pstest 8179/1
-pstest 8180/1
-pstest 8181/1
-pstest 8182/1
-pstest 8183/1
-pstest 8184/1
-pstest 8185/1
-cd $root
-
-cd device/samsung/msm8960-common
-pstest 8169/1
-pstest 8170/1
-pstest 8171/1
-pstest 8172/1
-pstest 8173/1
-pstest 8174/1
-cd $root
-
 cd frameworks/base
 pstest 7969/6
 pstest 8014/4
@@ -47,7 +28,6 @@ pstest 8193/1
 cd $root
 
 cd vendor/samsung
-pstest 8187/1
 pstest 8188/1
 pstest 8189/1
 pstest 8190/1
