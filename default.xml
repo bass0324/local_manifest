@@ -8,7 +8,7 @@
   
   <project path="device/motorola/common" name="device_moto_hijack" remote="gh" revision="jb-mr1" />
   <project path="device/motorola/omap34com" name="device_motorola_omap34com" remote="gh" revision="jb-mr1" />
-  <project path="device/motorola/shadow" name="_device_motorola_shadow" remote="gh" revision="jb-mr1" />
+  <project path="device/motorola/shadow" name="device_motorola_shadow" remote="gh" revision="jb-mr1" />
   <project path="device/samsung/jf-common" name="device_samsung_jf-common" remote="gh" revision="jb-mr1" />
   <project path="device/samsung/jflteusc" name="device_samsung_jflteusc" remote="gh" revision="jb-mr1" />
   <project path="vendor/motorola" name="vendor_motorola" remote="gh" revision="jb-mr1" />
@@ -18,7 +18,7 @@
 
   <!-- Kernel(s) tracking AOKP upstream-->
   <project path="kernel/samsung/d2" name="AOKP/kernel_samsung_d2" remote="aokp" revision="jb-mr1" />
-  <project path="kernel/samsung/jf" name="kernel_samsung_jf" remote="gh" revision="jb-mr1" />
+  <project path="kernel/samsung/jf" name="CyanogenMod/android_kernel_samsung_jf" remote="cm" revision="cm-10.1" />
   <project path="kernel/lge/mako" name="faux123/mako" remote="aokp" revision="enhanced_stock" />
 
 </manifest> 
