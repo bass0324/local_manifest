@@ -16,5 +16,18 @@ fi
 
 
 repo sync -j$(cat /proc/cpuinfo | grep "^processor" | wc -l)
+# --------------------------------------------------- #
+# Check if cm-10.1 branch needs to be updated
+cd kernel/samsung/d2
+git fetch cm && git checkout cm/cm-10.1
+UPSTREAM=`git log --pretty=format:%H | tail -1 `
+git checkout cm-10.1
+LOCAL=`git log --pretty=format:%H | tail -1`
+
+if [ UPSTREAM != LOCAL ]; then
+	git pull cm cm-10.1
+	echo "Updated cm-10.1 branch. Please push to github."
+fi
+
 
 
