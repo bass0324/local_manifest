@@ -1,6 +1,5 @@
 # Run from root of source tree
 
-cd ..
 root=`pwd`
 cd $root
 
