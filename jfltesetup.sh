@@ -11,9 +11,7 @@ git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_opt_telep
 cd $root
 
 cd vendor/samsung
-pstest 8188/1
-pstest 8189/1
-pstest 8190/1
+pstest 8208/1
 cd $root
 
 cd vendor/aokp
