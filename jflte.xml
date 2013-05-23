@@ -4,7 +4,6 @@
     <remote  name="gh"
            fetch="https://github.com/BMc08GT/" />
 
-    <project path="device/samsung/jf-common" name="device_samsung_jf-common" remote="gh" revision="jb-mr1" />
     <project path="device/samsung/jflteusc" name="device_samsung_jflteusc" remote="gh" revision="jb-mr1" />
 
     <!-- add this repo -->
