@@ -7,7 +7,7 @@ cd $root
 . build/envsetup.sh >/dev/null 2>&1
 
 cd frameworks/opt/telephony
-git fetch ssh://BMc@review.cyanogenmod.org:29418/CyanogenMod/android_frameworks_opt_telephony refs/changes/75/37075/2 && git cherry-pick FETCH_HEAD
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_opt_telephony refs/changes/36/37936/28 && git cherry-pick FETCH_HEAD
 cd $root
 
 cd vendor/samsung
