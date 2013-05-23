@@ -9,8 +9,8 @@
   <project path="device/motorola/common" name="device_moto_hijack" remote="gh" revision="jb-mr1" />
   <project path="device/motorola/omap34com" name="device_motorola_omap34com" remote="gh" revision="jb-mr1" />
   <project path="device/motorola/shadow" name="device_motorola_shadow" remote="gh" revision="jb-mr1" />
-  <project path="device/samsung/jf-common" name="device_samsung_jf-common" remote="gh" revision="jb-mr1" />
   <project path="device/samsung/jflteusc" name="device_samsung_jflteusc" remote="gh" revision="jb-mr1" />
+  <project path="device/samsung/jfltevzw" name="device_samsung_jfltevzw" remote="gh" revision="jb-mr1" />
   <project path="vendor/motorola" name="vendor_motorola" remote="gh" revision="jb-mr1" />
   
   <!-- add this repo -->
