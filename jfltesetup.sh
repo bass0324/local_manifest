@@ -35,3 +35,5 @@ pstest 8191/2
 pstest 8521/5
 pstest 8567/1
 cd $root
+
+. build/envsetup.sh >/dev/null 2>&1
