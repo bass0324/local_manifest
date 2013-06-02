@@ -17,7 +17,6 @@ cd $root
 cd vendor/aokp
 pstest 8191/6
 pstest 8583/1
-pstest 8659/2
 pstest 8658/2
 cd $root
 
