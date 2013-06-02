@@ -2,20 +2,7 @@
 <manifest>
 
   <remote  name="gh"
-           fetch="https://github.com/BMc08GT/" />
-           
-                    
-  <remove-project name="AOKP/device_samsung_jflteusc" />
-  <remove-project name="AOKP/device_samsung_jfltevzw" />
-  <remove-project name="AOKP/vendor_motorola" />
-  
-  
-  <project path="device/motorola/common" name="device_moto_hijack" remote="gh" revision="jb-mr1" />
-  <project path="device/motorola/omap34com" name="device_motorola_omap34com" remote="gh" revision="jb-mr1" />
-  <project path="device/motorola/shadow" name="device_motorola_shadow" remote="gh" revision="jb-mr1" />
-  <project path="device/samsung/jflteusc" name="device_samsung_jflteusc" remote="gh" revision="jb-mr1" />
-  <project path="device/samsung/jfltevzw" name="device_samsung_jfltevzw" remote="gh" revision="jb-mr1" />
-  <project path="vendor/motorola" name="vendor_motorola" remote="gh" revision="jb-mr1" />
+           fetch="https://github.com/BMc08GT/" />           
   
   <!-- add this repo -->
   <project path="local_manifest" name="local_manifest" remote="gh" revision="master" />
@@ -23,6 +10,5 @@
   <!-- Kernel(s) tracking AOKP upstream-->
   <project path="kernel/samsung/d2" name="CyanogenMod/android_kernel_samsung_d2" remote="cm" revision="cm-10.1" />
   <project path="kernel/samsung/jf" name="CyanogenMod/android_kernel_samsung_jf" remote="cm" revision="cm-10.1" />
-  <project path="kernel/lge/mako" name="faux123/mako" remote="aokp" revision="enhanced_stock" />
 
 </manifest> 
