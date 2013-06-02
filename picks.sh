@@ -12,16 +12,19 @@ pstest 7717/2
 cd $root
 
 cd frameworks/base
-pstest 8575/2
-pstest 8704/1
 pstest 8686/4
-pstest 8707/1
-pstest 8573/29
+pstest 8533/1
+pstest 8642/2
 cd $root 
 
 cd packages/apps/ROMControl
-pstest 8576/1
-pstest 8574/6
+pstest 8534/3
+pstest 8643/2
+cd $root
+
+cd vendor/samsung
+pstest 8747/1
+pstest 8748/1
 cd $root
 
 
