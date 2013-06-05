@@ -20,4 +20,8 @@ pstest 8583/1
 pstest 8658/2
 cd $root
 
+cd vendor/samsung
+pstest 8806/1
+cd $root
+
 . build/envsetup.sh >/dev/null 2>&1
