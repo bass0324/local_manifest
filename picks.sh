@@ -12,7 +12,6 @@ pstest 7717/2
 cd $root
 
 cd frameworks/base
-pstest 8686/5
 pstest 8533/1
 pstest 8642/2
 cd $root 
