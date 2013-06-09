@@ -16,10 +16,10 @@ pstest 8533/1
 pstest 8642/2
 cd $root 
 
-cd packages/apps/ROMControl
-pstest 8534/3
-pstest 8643/2
-cd $root
+#cd packages/apps/ROMControl
+#pstest 8534/3
+#pstest 8643/2
+#cd $root
 
 # Reinitialize build environment with pspush
 . build/envsetup.sh >/dev/null 2>&1
