@@ -10,18 +10,19 @@ cd build
 pstest 7717/2
 cd $root
 
+cd device/samsung/jf-common
+pstest 8855/1
+cd $root
+
 cd packages/apps/Camera
-pstest 8685/1
+pstest 8875/1
 cd $root
 
-cd vendor/aokp
-pstest 8191/6
-pstest 8583/1
-pstest 8658/2
-cd $root
-
-cd vendor/samsung
-pstest 8806/1
+cd vendor/aokp 
+pstest 8191/8
+pstest 8854/2
+pstest 8658/4
+pstest 8890/1
 cd $root
 
 . build/envsetup.sh >/dev/null 2>&1
