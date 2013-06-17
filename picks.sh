@@ -11,15 +11,13 @@ cd build
 pstest 7717/2
 cd $root
 
-cd frameworks/base
-pstest 8533/1
-pstest 8642/2
+cd device/samsung/msm8960-common
+pstest 8924/2
 cd $root 
 
-#cd packages/apps/ROMControl
-#pstest 8534/3
-#pstest 8643/2
-#cd $root
+cd vendor/aokp
+pstest 8943/1
+cd $root
 
 # Reinitialize build environment with pspush
 . build/envsetup.sh >/dev/null 2>&1
